@@ -11,17 +11,19 @@
     <div>
        
         <nav
-        x-data = '{open:false}'
+        x-data = "{open:false}"
+        :class="open ? 'h-24' : 'h-screen' "
          class=  "flex flex-col md:flex-row-reverse gap-6 w-full bg-slate-700 text-cyan-50
          py-6 px-6 md:justify-start justify-center items-center">
             <img class="w-14" src="../src/img/logo.png" alt="">
-            <button>
+            <button @click="open = !open">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>                  
             </button>
             <ul
             x-show = 'open'
+            :class="open ? 'hidden' : ''"
              class="flex gap-6 flex-col-reverse md:flex-row-reverse
               md:text-blue-50">
                 <li>home</li>
