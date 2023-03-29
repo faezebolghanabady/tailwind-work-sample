@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./build/main.css">
-    <title>Document</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <div>
-        <nav class="flex flex-col md:flex-row-reverse gap-6 w-full md:justify-start bg-slate-700 text-cyan-50 py-6 px-6 items-center">
+       
+        <nav
+        x-data = '{open:false}'
+         class=  "flex flex-col md:flex-row-reverse gap-6 w-full bg-slate-700 text-cyan-50
+         py-6 px-6 md:justify-start justify-center items-center">
             <img class="w-14" src="../src/img/logo.png" alt="">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>                  
             </button>
-            <ul class="flex gap-6 flex-col-reverse md:flex-row-reverse  md:text-blue-50">
+            <ul class="flex gap-6 flex-col-reverse md:flex-row-reverse
+            x-show = 'open'
+              md:text-blue-50">
                 <li>home</li>
                 <li>About us</li>
                 <li>cantact us</li>
