@@ -517,8 +517,20 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-14 {
@@ -545,40 +557,12 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-items-end {
-  justify-items: end;
-}
-
 .gap-6 {
   gap: 1.5rem;
-}
-
-.justify-self-auto {
-  justify-self: auto;
 }
 
 .bg-slate-700 {
