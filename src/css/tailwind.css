@@ -8,3 +8,19 @@
         hover:text-black rounded-xl hover:px-2
     }
 }
+
+
+@layer components{
+    .but{
+        @apply text-center text-cyan-400 bg-black
+        rounded-xl px-4 text-center justify-center
+    }
+}
+
+
+@layer base{
+    @font-face {
+        font-family: 'vazir';
+        src: url('') format('');
+    }
+}

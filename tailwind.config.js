@@ -3,6 +3,10 @@ module.exports = {
   content: ["./public/**/*.html"],
   theme: {
     extend: {},
+    fontFamily:{
+      vazir:[],
+      vazirBold:[]
+    }
   },
   plugins: [],
 }
