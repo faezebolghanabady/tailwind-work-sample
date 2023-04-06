@@ -5,7 +5,7 @@
 @layer components{
     .li{
         @apply hover:bg-orange-500 px-1 transition duration-500
-        hover:text-black rounded-xl
+        hover:text-blac rounded-xl 
     }
 }
 
