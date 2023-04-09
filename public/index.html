@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./build/main.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+         .backg{
+        background-image: url(../img/girls.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+    </style>
 </head>
-<body class="bg-slate-500">
+<body>
     <div>
        <!--start navebare-->
         <nav class=  "flex flex-col md:flex-row-reverse gap-6 w-full bg-slate-700 text-cyan-50
          py-6 px-6 md:justify-start justify-center items-center">
             <img class="w-14 rounded" src="../src/img/logo.png" alt="">
             <ul
-            x-show = 'open'
-            :class="open ? '' : ''"
              class="flex gap-10 flex-col-reverse md:flex-row-reverse
               md:text-blue-50">
                 <li class="li">home</li>
                 <li class="li">About us</li>
                 <li class="li">cantact us</li>
-                <li class="bg-black li">services</li>
+                <li class="li">services</li>
             </ul>
         </nav>
     </div>
     <!--ende navebare-->
+
     <!-- start back grand-->
+    <div class="bg-cover">
+        <img class="bg-cover" src="../src/img/girls.jpg" alt="">
+        <!-- <div class="bg-cover" style="background-image: url(../src/img/girls.jpg)"></div> -->
+    </div>
     <!--ende back grand  -->
 
 

@@ -532,13 +532,17 @@ video {
 
 .li:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .flex {
   display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-14 {
@@ -573,9 +577,21 @@ video {
   gap: 1.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .bg-slate-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .px-6 {
@@ -591,6 +607,12 @@ video {
 .text-cyan-50 {
   --tw-text-opacity: 1;
   color: rgb(236 254 255 / var(--tw-text-opacity));
+}
+
+.f{
+  background-image: url(../img/girls.jpg);
+  background-size: cover;
+  background-position: t;
 }
 
 @media (min-width: 768px) {
